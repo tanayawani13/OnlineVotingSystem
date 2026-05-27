@@ -52,11 +52,11 @@ Tanaya Wani
 ## Home Page
 ![Home](screenshots/home.jpg)
 
-## User Login
-![User Login](screenshots/user_login.jpg)
-
 ## User Registration
 ![User Registration](screenshots/user_registeration.jpg)
+
+## User Login
+![User Login](screenshots/user_login.jpg)
 
 ## Admin Login
 ![Admin Login](screenshots/admin_login.jpg)
@@ -67,14 +67,18 @@ Tanaya Wani
 ## Result Page
 ![Result](screenshots/result.jpg)
 
+## Voting Statistics
+![Voting Statistics](screenshots/voting_stats.jpg)
+
+## Admin Dashboard
+![Admin Dashboard](screenshots/admin_dashboard.jpg)
+
 ## Add Category
 ![Add Category](screenshots/add_category.jpg)
 
 ## Add Nominee
 ![Add Nominee](screenshots/add_nominee.jpg)
 
-## Admin Dashboard
-![Admin Dashboard](screenshots/admin_dashboard.jpg)
 
-## Voting Statistics
-![Voting Statistics](screenshots/voting_stats.jpg)
+
+
