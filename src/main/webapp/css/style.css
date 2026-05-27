@@ -1,0 +1,371 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY - GRADIENT + ANIMATION */
+body {
+    font-family: 'Poppins', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+    background: linear-gradient(135deg, #1a0026, #3a0ca3, #7209b7, #f72585);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: #fff;
+    text-align: center;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 42px;
+    color: gold;
+    text-shadow: 0 0 15px gold;
+    margin-top: 20px;
+}
+
+h2 {
+    margin: 10px;
+    color: #ffccff;
+}
+
+h3 {
+    color: #ffd6ff;
+    margin-top: 20px;
+}
+
+/* CONTAINER - GLASS EFFECT */
+.container {
+    width: 65%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(255,255,255,0.3);
+}
+
+/* INPUT (FORMS) */
+input {
+    width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 0;        /* 🔥 remove extra gap */
+}
+
+/* FIX RADIO BUTTON SIZE */
+input[type="radio"] {
+    width: auto;
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(45deg, #ffbe0b, #fb5607);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ffbe0b;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff006e, #8338ec);
+}
+
+/* CENTER ONLY SUBMIT BUTTON */
+.btn-center {
+    text-align: center;
+}
+
+.btn-center button {
+    margin: 20px auto;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+}
+
+/* LABEL (for voting page alignment) */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 2px;   /* 🔥 very small gap */
+    text-align: center;
+}
+
+
+/* TABLE (RESULT / VOTES) */
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 60%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid white;
+}
+
+th {
+    background: #ff006e;
+    color: white;
+}
+
+tr:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background: rgba(0,0,0,0.3);
+}
+
+/* TAGLINE COLORS */
+.tagline {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.highlight1 { color: #ffbe0b; }
+.highlight2 { color: #00f5d4; }
+.highlight3 { color:#ffbe0b; }
+.highlight4 { color: #00f5d4; }
+
+/* CARD STYLE (ABOUT & RULES) */
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    text-align: left;
+}
+
+/* ABOUT & RULES TITLES */
+.about-title {
+    color: #00f5d4;
+    text-shadow: 0 0 10px #00f5d4;
+}
+
+.rules-title {
+    color: #ffbe0b;
+    text-shadow: 0 0 10px #ffbe0b;
+}
+
+/* TROPHY ICON */
+.trophy {
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+/* TYPING TEXT (JS BASED) */
+#typingText {
+    font-size: 42px;
+    color: gold;
+    text-shadow: 0 0 15px gold;
+}
+
+/* OPTIONAL INPUT FOCUS EFFECT */
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ffbe0b;
+}	
+
+
+
+
+
+
+
+
+
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: none !important;
+
+    font-size: 42px;
+    color: gold;
+    text-shadow: 0 0 15px gold;
+
+    width: 0;
+    animation: typing 4s steps(28, end) forwards;
+}
+
+
+
+
+
+
+
+.typing::after {
+    content: none !important;
+}
+
+
+
+
+
+/* typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 28ch; }  /* adjust if needed */
+}
+
+/* cursor blink */
+<!-- @keyframes blink {
+    50% { border-color: transparent; }
+}  -->
+
+
+
+
+
+.vote-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+    justify-content: flex-start;
+    margin-left: 20%;
+}
+
+.vote-option img {
+    width: 60px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.category-box {
+    background: rgba(255,255,255,0.12);
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*trohy animation
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+
+
+
+
+
+
+
+
+/* ===== WINNER CARD FINAL CLEAN ===== */
+
+.winner-card {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 215, 0, 0.1);
+    border: 2px solid gold;
+    box-shadow: 0 0 25px gold;
+    transition: all 0.4s ease;
+}
+
+/* 🔥 CARD HOVER */
+.winner-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 50px gold;
+}
+
+/* 🏆 TITLE */
+.winner-title {
+    color: gold;
+    font-size: 28px;
+    text-shadow: 0 0 10px gold;
+    margin-bottom: 10px;
+}
+
+/* 📸 FIXED IMAGE BOX (MAIN FIX) */
+.image-box {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* ✅ PERFECT IMAGE FIT */
+.winner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* 🔥 IMAGE ZOOM */
+.winner-card:hover .winner-img {
+    transform: scale(1.1);
+}
+
+/* ✨ NAME */
+.winner-name {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00f5d4;
+    text-shadow: 0 0 10px #00f5d4;
+}
+
+
+
+
+
+
+
+
+
+
